@@ -1,50 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <meta http-equiv="refresh" content="30"> !-->
-    <title>Jefferson Kidd | Links</title>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMHT5B93BW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  
-      gtag('config', 'G-EMHT5B93BW');
-    </script>
+:root {
+    --primary: #038391;
+    --primary-light: #04C8DE;
+    --secondary: #FFAE00;
+    --secordary-dark: #91650a;
+    --accent: #de351b;
+    --accent-dark: #911c0a;
+    --black: #001214;
+    --white: #EBFDFF;
+    --linear-gradient: linear-gradient(180deg, #002D37 0%, #049FB1 78.13%, #E2E2E2 100%);
+}
 
-  </head>
-  <body>
-      <!-- Header -->
-    <header>
-      <!-- Profile picture-->
-      <img src="img/logo.png" alt="Jefferson Kidd's logo" class="logo-sq"> 
-      <!-- Profile name-->
-      <h1>Jefferson Kidd</h1>
-    </header>
-      <!-- Content -->
-    <main>
-      <!-- Links -->
-      <div class="container">
-   <!-- <a href="https://pangolin.com" class="link-button" target="_blank">Shop Lasers!</a> !-->
-        <a href="mailto:jeffersonkidd@hotmail.com" class="link-button" target="_blank">Email Me!</a>
-        <a href="https://twitter.com/jefferson_kidd" class="link-button" target="_blank">Twitter</a>
-        <a href="https://instagram.com/jeffersonkidd" class="link-button" target="_blank">Instagram</a>
-        <a href="https://threads.net/@jeffersonkidd" class="link-button" target="_blank">Threads</a>
-        <a href="https://tiktok.com/@jefferson.kidd" class="link-button" target="_blank">TikTok</a>
-   <!-- <a href="https://youtube.com/jeffersonkidd" class="link-button" target="_blank">YouTube</a> !-->
-        <a href="https://discordapp.com/users/jeffersonkidd" class="link-button" target="_blank">Discord</a>
-      </div>
-    </main>
-      <!-- Footer -->
-    <footer>
-      <!-- Copyright -->
-      <p>&copy;2024 All rights reserved.</p>
-    </footer>
+html, * {
+/*  outline: 1px solid red;  */
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
 
-  </body>
-</html>
+body {
+    background: var(--linear-gradient);
+    font-family: 'Special Elite', cursive;
+    min-height: 100vh;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-sq {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    width: 160px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 52px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000; 
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+/* MAIN */
+
+main {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-button {
+    background-color: var(--secondary);
+    color: var(--black);
+    display: flex-item;
+    padding-top: 28px;
+    padding-bottom: 24px;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 22px;
+    line-height: 0px; 
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    width: 280px; 
+    transition: background 0.3s;
+}
+
+.link-button:hover {
+    background: var(--white);
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    color: var(--white);
+    text-align: center;
+}
