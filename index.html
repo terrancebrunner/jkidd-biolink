@@ -1,98 +1,44 @@
-:root {
-    --primary: #038391;
-    --primary-light: #04C8DE;
-    --secondary: #de9e1b;
-    --secordary-dark: #91650a;
-    --accent: #de351b;
-    --accent-dark: #911c0a;
-    --black: #001214;
-    --white: #EBFDFF;
-    --linear-gradient: linear-gradient(180deg, #002D37 0%, #049FB1 78.13%, #E2E2E2 100%);
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Jefferson Kidd | Links</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
-html * {
-  box-sizing: border-box;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: var(--linear-gradient);
-  font-family: Helvetica, sans-serif;
-  min-height: 100vh;
-  margin: auto;
-}
-/* HEADER */
-
-header {
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMHT5B93BW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
   
-}
+      gtag('config', 'G-EMHT5B93BW');
+    </script>
 
-.logo-sq {
-  margin-top: 2rem;
-  margin-bottom: .5rem;
-  width: 160px;
-}
-
-h1 {
-  font-size: 48px;
-  text-align: center;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-
-}
-
-/* MAIN */
-
-main {
-  color: var(--white);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: space-evenly;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.chip {
-background-color: var(--secondary);
-color: var(--black);
-display: block;
-margin-bottom: .5rem;
-padding: 1.75rem;
-border: 2px solid black;
-border-radius: 40px;
-font-size: 18px;
-line-height: 0px; 
-text-align: center;
-text-decoration: none;
-text-transform: uppercase;
-width: 280px;
-transition: background 0.3s;
-}
-
-.chip:hover {
-background: var(--white);
-}
-
-footer {
-  display: flex;  
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--black);
-  text-align: center;
-}
+  </head>
+  <body>
+    <header>
+      <!-- Profile picture-->
+      <img src="img/logo.png" alt="Jefferson Kidd" class="logo-sq"> 
+      <!-- Profile name-->
+      <h1>Jefferson Kidd</h1>
+    </header>
+      <!-- Links-->
+    <main>
+      <div class="container">
+        <a href="https://pangolin.com" class="chip" target="_blank">Shop Lasers!</a>
+        <a href="mailto:jeffersonkidd@hotmail.com" class="chip" target="_blank">Email Me</a>
+        <a href="https://twitter.com/jeffersonkidd_" class="chip" target="_blank">Twitter</a>
+        <a href="https://instagram.com/jeffersonkidd" class="chip" target="_blank">Instagram</a>
+        <a href="https://youtube.com/jeffersonkidd" class="chip" target="_blank">YouTube</a>
+        <a href="https://discordapp.com/users/jeffersonkidd" class="chip" style="margin-bottom: 0px;">Discord</a>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer>
+      <p>&copy;2023 All rights reserved.</p>
+    </footer>
+  </body>
+</html>
