@@ -10,66 +10,89 @@
     --linear-gradient: linear-gradient(180deg, #002D37 0%, #049FB1 78.13%, #E2E2E2 100%);
 }
 
-* {
+html * {
   box-sizing: border-box;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
 body {
   background: var(--linear-gradient);
-  display: flex;
+  font-family: Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: auto;
 }
 /* HEADER */
 
-.container {
+header {
   color: var(--white);
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-  padding-top: 4rem;
-  padding-left: 12px;
-  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .logo-sq {
-/* border-radis: 50% */
-width: 160px;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  width: 160px;
 }
 
 h1 {
-font-size: 48px;
-margin-top: 12px;
-margin-bottom: 28px;
-display: block;
+  font-size: 48px;
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+
 }
 
-.column {
-margin-bottom: 36px;
-font-size: 20px;
+/* MAIN */
+
+main {
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-evenly;
 }
 
-#link-tree a {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chip {
 background-color: var(--secondary);
 color: var(--black);
-padding: 18px;
-border: 2px solid black;
-border-radius: 50px;
-margin: 12px auto;
 display: block;
+margin-bottom: .5rem;
+padding: 1.75rem;
+border: 2px solid black;
+border-radius: 40px;
+font-size: 18px;
+line-height: 0px; 
+text-align: center;
 text-decoration: none;
 text-transform: uppercase;
-height: 64px;
-max-width: 320px;
+width: 280px;
 transition: background 0.3s;
 }
 
-#link-tree a:hover {
+.chip:hover {
 background: var(--white);
 }
 
 footer {
-   color: var(--black);
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  text-align: center;
 }
