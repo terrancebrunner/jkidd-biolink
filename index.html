@@ -1,48 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content=”no-cache,no-store,must-revalidate”>
-    <meta http-equiv=”Pragma” content=”no-cache”>
-    <meta http-equiv=”Expires” conteht=”0”>
-    <title>Jefferson Kidd | Welcome Home!</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png" type="image/png">
+:root {
+    --primary: #038391;
+    --primary-light: #04C8DE;
+    --secondary: #de9e1b;
+    --secordary-dark: #91650a;
+    --accent: #de351b;
+    --accent-dark: #911c0a;
+    --black: #001214;
+    --white: #EBFDFF;
+    --linear-gradient: linear-gradient(180deg, #002D37 0%, #049FB1 78.13%, #E2E2E2 100%);
+}
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMHT5B93BW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+html * {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--linear-gradient);
+  font-family: Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: auto;
+}
+/* HEADER */
+
+header {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
-      gtag('config', 'G-EMHT5B93BW');
-    </script>
+}
 
-  </head>
-  <body>
-    <header class=”container-fluid”>
-      <!-- Profile picture-->
-      <img src="img/logo.png" alt="Jefferson Kidd" class="logo-sq"> 
-      <!-- Profile name-->
-      <h1>Jefferson Kidd</h1>
-    </header>
-    <main>
-      <section class=”container”>
-        <div class=”column” id=”link-tree”>
-      <!-- Links-->
-        <a href="https://pangolin.com" target=”_blank”>Shop Lasers!</a>
-        <a href="mailto:jeffersonkidd@hotmail.com" target="_blank" class="chip">EMAIL ME</a>
-        <a href="https://twitter.com/jefferson_kidd" target=”_blank”>Twitter</a>
-        <a href="https://instagram.com/jeffersonkidd" target=”_blank”>Instagram</a>
-        <a href="https://youtube.com/jeffersonkidd" target=”_blank">YouTube</a>
-        <a href="https://discordapp.com/users/jeffersonkidd" target=”_blank” style="margin-bottom: 0px;">Discord please!</a>
-        </div>
-      </section>
-    </main>
-    <!-- Footer-->
-    <footer class=”container-fluid”>
-      <p>&copy;2024 All rights reserved.</p>
-    </footer>
-  </body>
-</html>
+.logo-sq {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  width: 160px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+
+}
+
+/* MAIN */
+
+main {
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chip {
+background-color: var(--secondary);
+color: var(--black);
+display: block;
+margin-bottom: .5rem;
+padding: 1.75rem;
+border: 2px solid black;
+border-radius: 40px;
+font-size: 18px;
+line-height: 0px; 
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+width: 280px;
+transition: background 0.3s;
+}
+
+.chip:hover {
+background: var(--white);
+}
+
+footer {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  text-align: center;
+}
