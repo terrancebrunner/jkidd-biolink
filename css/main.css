@@ -1,7 +1,7 @@
 :root {
     --primary: #038391;
     --primary-light: #04C8DE;
-    --secondary: #de9e1b;
+    --secondary: #FFAE00;
     --secordary-dark: #91650a;
     --accent: #de351b;
     --accent-dark: #911c0a;
@@ -10,7 +10,8 @@
     --linear-gradient: linear-gradient(180deg, #002D37 0%, #049FB1 78.13%, #E2E2E2 100%);
 }
 
-html * {
+html, * {
+/*  outline: 1px solid red;  */
     box-sizing: border-box;
     font-size: 16px;
     margin: 0;
@@ -19,10 +20,11 @@ html * {
 
 body {
     background: var(--linear-gradient);
-    font-family: Helvetica, sans-serif;
+    font-family: 'Special Elite', sans-serif;
     min-height: 100vh;
     margin: auto;
 }
+
 /* HEADER */
 
 header {
@@ -34,16 +36,23 @@ header {
 }
 
 .logo-sq {
-    margin-top: 2rem;
-    margin-bottom: .5rem;
+    margin-top: 32px;
+    margin-bottom: 8px;
     width: 160px;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 52px;
+    line-height: 52px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000; 
+    font-family: Helvetica, sans-serif;
     text-align: center;
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 32px;
 }
 
 /* MAIN */
@@ -59,37 +68,40 @@ main {
 .container {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     justify-content: center;
     align-items: center;
 }
 
-.chip {
+.link-button {
     background-color: var(--secondary);
     color: var(--black);
     display: flex-item;
-    margin-bottom: .5rem;
-    padding: 1.75rem;
+    padding-top: 28px;
+    padding-bottom: 24px;
     border: 2px solid black;
     border-radius: 40px;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 0px; 
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
-    width: 280px;
+    text-transform: none;
+    width: 280px; 
     transition: background 0.3s;
 }
 
-.chip:hover {
+.link-button:hover {
     background: var(--white);
 }
+
+/* FOOTER */
 
 footer {
     display: flex;  
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 88px;
     color: var(--white);
     text-align: center;
 }
