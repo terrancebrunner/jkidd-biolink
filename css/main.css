@@ -22,8 +22,9 @@ body {
     background: var(--linear-gradient);
     font-family: 'Special Elite', cursive;
     min-height: 100vh;
-    margin: auto;
     display: flex;
+    flex-direction: flex-col;
+    width: 100%;
 }
 
 /* HEADER */
