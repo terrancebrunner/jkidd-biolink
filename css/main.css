@@ -23,6 +23,7 @@ body {
     font-family: 'Special Elite', cursive;
     min-height: 100vh;
     margin: auto;
+    display: flex;
 }
 
 /* HEADER */
