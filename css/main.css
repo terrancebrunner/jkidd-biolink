@@ -23,7 +23,9 @@ body {
     font-family: 'Special Elite', cursive;
     min-height: 100vh;
     display: flex;
-    flex-direction: flex-col;
+    flex-direction: column;      /* Fixed: was "flex-col" */
+    justify-content: center;     /* Add: vertical centering */
+    align-items: center;         /* Add: horizontal centering */
     width: 100%;
 }
 
