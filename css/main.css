@@ -142,7 +142,7 @@ body {
     background: var(--color-background);
     color: var(--color-foreground);
     font-family: 'Special Elite', cursive;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;      /* Fixed: was "flex-col" */
     justify-content: center;     /* Add: vertical centering */
