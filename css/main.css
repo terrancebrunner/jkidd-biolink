@@ -1,4 +1,7 @@
 :root {
+  --black: #001214;
+  --white: #EBFDFF;
+  --transparent: #00000000;
   --background: oklch(0.9612 0 0);
   --foreground: oklch(0.2138 0.0019 286.2347);
   --card: oklch(0.9612 0 0);
@@ -116,8 +119,7 @@
   --secordary-dark: #91650a;
   --accent: #de351b;
   --accent-dark: #911c0a;
-  --black: #001214;
-  --white: #EBFDFF;
+
   --linear-gradient: linear-gradient(180deg, #002D37 0%, #049FB1 78.13%, #E2E2E2 100%);
 }
 
@@ -168,14 +170,15 @@ header {
 }
 
 h1 {
+    font-family: Helvetica, sans-serif;
+    color: var(--white);
     font-size: 52px;
     line-height: 52px;
     text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,  
-    -1px  1px 0 #000,  
-     1px  1px 0 #000; 
-    font-family: Helvetica, sans-serif;
+    -1px -1px 0 var(--black),  
+     1px -1px 0 var(--black),  
+    -1px  1px 0 var(--black),  
+     1px  1px 0 var(--black); 
     text-align: center;
     margin-top: 8px;
     margin-bottom: 32px;
